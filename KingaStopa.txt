@@ -1,0 +1,10 @@
+Ad 3. Ostatni commit dokonano 15 grudnia 2017.
+Ad 4. Repozytorium zawiera 4 pliki.
+Ad 5. Zawartoœæ pliku README.md, to:
+
+1 # Test-Ruby
+
+
+2
+3 To repozytorium zawiera zadania do wykonania z przedmiotu Tworzenie 4 aplikacji bazodanowych
+
