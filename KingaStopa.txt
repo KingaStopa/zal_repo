@@ -77,3 +77,114 @@ Unpacking objects: 100% (27/27), done.
 		- treœæ zadania
 - w ka¿dym pliku na koñcu kody w komentarzy podaæ przyk³ady prezentuj¹ce dzia³anie programu
 
+5. Dodaæ wszystkie pliki z kodem do repozyterium w katalogu 'TwApB'
+$ git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        modified:   KingaStopa.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        "1. Obliczanie wsp\303\263lnego dzielnika.rb"
+        "1. Obliczanie wsp\303\263lnego dzielnika.txt"
+        2. Bramki logiczne.rb
+        2. Bramki logiczne.txt
+        3. Zadanie z tablicami asocjacyjnymi.rb
+        3. Zadanie z tablicami asocjacyjnymi.txt
+        repoZdalne/
+
+
+eking@LAPTOP-55UNG5HG /d/eking/documents/stud/s/ajpit/3r1s/tabkolodziejczyk/TwApB (master)
+$ git add '*.txt'
+
+eking@LAPTOP-55UNG5HG /d/eking/documents/stud/s/ajpit/3r1s/tabkolodziejczyk/TwApB (master)
+$ git add '*.rb'
+
+eking@LAPTOP-55UNG5HG /d/eking/documents/stud/s/ajpit/3r1s/tabkolodziejczyk/TwApB (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   "1. Obliczanie wsp\303\263lnego dzielnika.rb"
+        new file:   "1. Obliczanie wsp\303\263lnego dzielnika.txt"
+        new file:   2. Bramki logiczne.rb
+        new file:   2. Bramki logiczne.txt
+        new file:   3. Zadanie z tablicami asocjacyjnymi.rb
+        new file:   3. Zadanie z tablicami asocjacyjnymi.txt
+        modified:   KingaStopa.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        repoZdalne/
+
+
+eking@LAPTOP-55UNG5HG /d/eking/documents/stud/s/ajpit/3r1s/tabkolodziejczyk/TwApB (master)
+$ git add repoZdalne
+
+eking@LAPTOP-55UNG5HG /d/eking/documents/stud/s/ajpit/3r1s/tabkolodziejczyk/TwApB (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   "1. Obliczanie wsp\303\263lnego dzielnika.rb"
+        new file:   "1. Obliczanie wsp\303\263lnego dzielnika.txt"
+        new file:   2. Bramki logiczne.rb
+        new file:   2. Bramki logiczne.txt
+        new file:   3. Zadanie z tablicami asocjacyjnymi.rb
+        new file:   3. Zadanie z tablicami asocjacyjnymi.txt
+        modified:   KingaStopa.txt
+        new file:   repoZdalne/Test-Ruby
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+  (commit or discard the untracked or modified content in submodules)
+
+        modified:   repoZdalne/Test-Ruby (modified content)
+
+
+eking@LAPTOP-55UNG5HG /d/eking/documents/stud/s/ajpit/3r1s/tabkolodziejczyk/TwApB (master)
+$ git add repoZdalne/Test-Ruby
+
+eking@LAPTOP-55UNG5HG /d/eking/documents/stud/s/ajpit/3r1s/tabkolodziejczyk/TwApB (master)
+$ git commit -m "Dodanie wszystkich plikow"
+[master 5eda3fa] Dodanie wszystkich plikow
+ 8 files changed, 532 insertions(+), 2 deletions(-)
+ create mode 100644 "1. Obliczanie wsp\303\263lnego dzielnika.rb"
+ create mode 100644 "1. Obliczanie wsp\303\263lnego dzielnika.txt"
+ create mode 100644 2. Bramki logiczne.rb
+ create mode 100644 2. Bramki logiczne.txt
+ create mode 100644 3. Zadanie z tablicami asocjacyjnymi.rb
+ create mode 100644 3. Zadanie z tablicami asocjacyjnymi.txt
+ create mode 160000 repoZdalne/Test-Ruby
+
+6. Utworzyæ zdalne repozytorium i wys³aæ na nie ca³¹ zawartoœæ repo z katalogu 'TwApB' i równie¿ odœwie¿on¹ wersjê pliku 'ImieNazwisko'.
+
+D:\eking\Documents\STUD\S\AJPIT\3r1s\TABKolodziejczyk\TwApB>git push https://github.com/KingaStopa/zal_repo
+To https://github.com/KingaStopa/zal_repo
+ ! [rejected]        master -> master (non-fast-forward)
+error: failed to push some refs to 'https://github.com/KingaStopa/zal_repo'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. Integrate the remote changes (e.g.
+hint: 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+D:\eking\Documents\STUD\S\AJPIT\3r1s\TABKolodziejczyk\TwApB>git status
+On branch master
+nothing to commit, working tree clean
+
+D:\eking\Documents\STUD\S\AJPIT\3r1s\TABKolodziejczyk\TwApB>git push https://github.com/KingaStopa/zal_repo --force
+Counting objects: 13, done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (11/11), done.
+Writing objects: 100% (13/13), 4.70 KiB | 1.17 MiB/s, done.
+Total 13 (delta 4), reused 0 (delta 0)
+remote: Resolving deltas: 100% (4/4), done.
+To https://github.com/KingaStopa/zal_repo
+ + a65a531...5eda3fa master -> master (forced update)
