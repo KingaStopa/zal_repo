@@ -1,0 +1,48 @@
+#Kinga Stopa
+#04-02-2018
+#-------
+#Obliczanie najwiêkszego wspólnego dzielnika 2 liczb:
+#-------
+#Napisaæ funkcjê obliczaj¹c¹ najwiêkszy wspólny dzielnik dla dwóch zadanych liczb zgodnie z regu³ami :
+
+#1. Je¿eli liczba x2 jest równa 0 to NWD jest równy x1
+#2. Je¿eli liczba x1  jest wiêksza od x2 to NWD jest równy wynikowi z obliczenia NWD dla liczb x2 i reszty z dzielenia x1 przez x2
+#3. Je¿eli liczba x2  jest wiêksza od x1 to NWD jest równy wynikowi z obliczenia NWD dla liczb x1 i eszty z dzielenia x2 przez x1
+
+#Przyk³adowe dzia³anie programu:
+
+#----------
+#puts nwd(5,10)
+#5
+#----------
+
+
+class NWD
+	def liczby(a,b)
+		@a = a
+		@b = b
+		liczby_reguly
+	end
+
+	def liczby_reguly
+		if @a > @b
+			@wieksza_liczba = @a
+			@mniejsza_liczba = @b
+		else
+			@wieksza_liczba = @b
+			@mniejsza_liczba = @a
+		end
+	end
+
+	def obliczenia
+		reszta = 1
+		dzielna = @wieksza_liczba
+		dzielnik = @mniejsza_liczba
+		until reszta == 0
+			reszta = dzielna % dzielnik
+			dzielna = dzielnik
+			dzielnik = reszta
+		end
+		dzielna
+	end
+end

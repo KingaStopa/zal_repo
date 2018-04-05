@@ -1,10 +1,79 @@
+Wykonaæ nastêpuj¹ce zadania:
+
+1. Utworzyæ w roboczym katalogu TwApB plik tekstowy o nazwie 'ImieNazwisko'. 
+2. W pliku tym nale¿y wpisywaæ wszystkie poni¿ej wykonane komendy Git i odpowiedzi na pytania.
+
+
+3. Kiedy we wskazanym repozytorium wykonano ostatni commit?
 Ad 3. Ostatni commit dokonano 15 grudnia 2017.
-Ad 4. Repozytorium zawiera 4 pliki.
+
+eking@LAPTOP-55UNG5HG MINGW64 /d/eking/Documents/STUD/S/ajpit/3r1s/TABKolodziejczyk/TwApB/repoZdalne/Test-Ruby (master)
+$ git log
+commit 62e28112832523d6f45f6a85af5f4e02a566b9cf (HEAD -> master, origin/master, origin/HEAD)
+Author: Joanna Kolodziejczyk <jkolodziejczyk@wi.zut.edu.pl>
+Date:   Fri Dec 15 13:47:15 2017 +0100
+
+    Poprawka
+
+commit fb1ae0646e44e7bca11398c38fc06336d3c8f424
+Author: Joanna Kolodziejczyk <jkolodziejczyk@wi.zut.edu.pl>
+Date:   Fri Dec 15 13:42:44 2017 +0100
+
+    Nowe zadania
+
+commit 2cc1982e4b70cbbf8199bdda5876f6017edf6d9d
+Author: Joanna Kolodziejczyk <jkolodziejczyk@wi.zut.edu.pl>
+Date:   Fri Dec 15 06:26:41 2017 +0100
+
+    Poprawiona instrukcja
+
+commit 36d1f973c13c7242f899b617cd5271e8fdb27da4
+Author: Joanna Kolodziejczyk <jkolodziejczyk@wi.zut.edu.pl>
+Date:   Fri Dec 15 00:36:56 2017 +0100
+
+4. Ile jest plików we wskazanym repozytorium? 
+Ad 4. Repozytorium zawiera 27 plików.
+
+eking@LAPTOP-55UNG5HG MINGW64 /d/eking/Documents/STUD/S/ajpit/3r1s/TABKolodziejczyk/TwApB/repoZdalne (master)
+$ git clone https://github.com/elois/Test-Ruby.git
+Cloning into 'Test-Ruby'...
+remote: Counting objects: 27, done.
+remote: Total 27 (delta 0), reused 0 (delta 0), pack-reused 27
+Unpacking objects: 100% (27/27), done.
+
+5. Jaka jest zawartoœæ pliku README.md
 Ad 5. Zawartoœæ pliku README.md, to:
 
 1 # Test-Ruby
 
 
 2
-3 To repozytorium zawiera zadania do wykonania z przedmiotu Tworzenie 4 aplikacji bazodanowych
+3 To repozytorium zawiera zadania do wykonania z przedmiotu Tworzenie 
+4 aplikacji bazodanowych
+
+
+6. W katalogu TwApB utworzyæ repozytorium Git.
+
+7. Zapisaæ w nim plik 'ImieNazwisko' i zapisaæ bie¿¹cy stan pliku w repozytorium.
+commit 727fd723605669965d14fd78bb350971658e85ba (HEAD -> master)
+Author: kingastopa <ekingastopa@gmail.com>
+Date:   Mon Apr 2 00:24:41 2018 +0200
+
+    Zapisuje plik imie i nazwisko w repozytorium
+
+8. Do innego katalogu sklonowaæ repozytorium zdalne https://github.com/elois/Test-Ruby
+eking@LAPTOP-55UNG5HG MINGW64 /d/eking/Documents/STUD/S/ajpit/3r1s/TABKolodziejczyk/TwApB/repoZdalne (master)
+$ git clone https://github.com/elois/Test-Ruby.git
+Cloning into 'Test-Ruby'...
+remote: Counting objects: 27, done.
+remote: Total 27 (delta 0), reused 0 (delta 0), pack-reused 27
+Unpacking objects: 100% (27/27), done.
+
+9. Rozwi¹zaæ zadania podane w pliku 'Instrukcja'. Wa¿ne:
+	- pliki z rozwi¹zanimi maj¹ siê znaleŸæ w katalogu TwApB. Ka¿de zadanie ma siê znaleŸæ w niezale¿nym pliku.
+	- w ka¿dym pliku w nag³ówku w komentarzu maj¹ siê znaleŸæ nastepuj¹ce informacje:
+		- imiê i nazwisko 
+		- bie¿¹ca data
+		- treœæ zadania
+- w ka¿dym pliku na koñcu kody w komentarzy podaæ przyk³ady prezentuj¹ce dzia³anie programu
 
